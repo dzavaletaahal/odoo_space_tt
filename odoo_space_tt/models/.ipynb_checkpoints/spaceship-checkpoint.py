@@ -24,3 +24,6 @@ class Spaceship(models.Model):
             if record.ship_width > record.ship_lenght:
                 raise ValidationError(_('Width can not be bigger than lenght' )) 
     
+    mission_ids = fields.One2many(comodel_name='mission',
+                                  inverse_name='spaceship_id', 
+                                  string='Missions')

@@ -10,6 +10,17 @@
                 </p>
             </field>
         </record>
+        
+        <record model="ir.actions.act_window" id="mission_action">
+            <field name="name">Missions</field>
+            <field name="res_model">mission</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first mission
+                </p>
+            </field>
+        </record>
 
         <menuitem name="Space App"
                   id="menu_spaceship"
@@ -19,6 +30,9 @@
         
         <menuitem id="menu_spaceship_models" name="Spaceship" parent="menu_spaceship" sequence="3"
                   action="spaceship_model_action"/>
+        
+        <menuitem id="menu_mission" name="Missions" parent="menu_spaceship" sequence="4"
+                  action="mission_action"/>
 
     </data>
 </odoo> 
