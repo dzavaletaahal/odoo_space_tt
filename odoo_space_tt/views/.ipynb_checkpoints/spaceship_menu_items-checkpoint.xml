@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="spaceship_model_action">
+            <field name="name">Spaceship</field>
+            <field name="res_model">spaceship</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first spaceship
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Space App"
+                  id="menu_spaceship"
+                  sequence="1"/>
+
+        <menuitem id="menu_spaceship_sub" name="Spaceship Model" parent="menu_spaceship" sequence="2"/>
+        
+        <menuitem id="menu_spaceship_models" name="Spaceship" parent="menu_spaceship" sequence="3"
+                  action="spaceship_model_action"/>
+
+    </data>
+</odoo> 
