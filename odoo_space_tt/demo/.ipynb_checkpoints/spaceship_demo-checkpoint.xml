@@ -1,0 +1,27 @@
+<odoo>
+    <data noupdate="1">
+        <record model="spaceship" id="spaceship_main">
+            <field name="name">Spaceship Challenger</field>
+            <field name="ship_dimensions">2500</field>
+            <field name="ship_type">Main Ship</field>
+            <field name="num_passengers">1000</field>
+            <field name="fuel_type">Diesel</field>
+        </record>
+
+        <record model="spaceship" id="spaceship_sub">
+            <field name="name">Spaceship Master</field>
+            <field name="ship_dimensions">2000</field>
+            <field name="ship_type">Sub Ship</field>
+            <field name="num_passengers">750</field>
+            <field name="fuel_type">Diesel</field>
+        </record>
+
+        <record model="spaceship" id="spaceship_recon">
+            <field name="name">Spaceship Recon</field>
+            <field name="ship_dimensions">1500</field>
+            <field name="ship_type">Recon Ship</field>
+            <field name="num_passengers">500</field>
+            <field name="fuel_type">Diesel</field>
+        </record>
+    </data>
+</odoo>
